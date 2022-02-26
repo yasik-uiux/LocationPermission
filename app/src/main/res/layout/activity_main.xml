@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/regis"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"
+            android:text="ACCESS YOUR \n LOCATION"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/klabold"
+            android:textStyle="bold"
+            android:textColor="@color/title"
+            android:layout_gravity="center"></TextView>
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/locationpointer"
+            app:tint="#569DEF" />
+
+
+        <ImageView
+            android:id="@+id/locationimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/locationbuild" />
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="We need to know your location in order to suggest nearby whistle &amp; set home location"
+            android:textColor="@color/description"
+            android:textSize="16sp"></TextView>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/alertGPS"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enable Location Service"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_gradient_round"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:padding="10dp"
+            android:textSize="14sp" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
